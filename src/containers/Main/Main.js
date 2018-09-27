@@ -59,7 +59,7 @@ const styles = theme => ({
                         {value === 0 && <p className={classes.selected}>Selected {ListViewSelectedRows.length}</p>}
                     </AppBar>
                     {value === 0 && <TabContainer>
-                        <EnhancedTable getSelectedRows={this.getSelectedRows} />
+                        <EnhancedTable source="db.json" getSelectedRows={this.getSelectedRows} />
                     </TabContainer>}
                     {value === 1 && <TabContainer>Item Two</TabContainer>}
                     {value === 2 && <TabContainer>Item Three</TabContainer>}
